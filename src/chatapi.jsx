@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Chatapi.css';
 import ChatHistory from './ChatHistory';
-
+import img from './art.png';
 const Chatbot = () => {
   const [userMessage, setUserMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -12,7 +12,7 @@ const Chatbot = () => {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": `Bearer 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`,
+          "Authorization": `Bearer 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`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -34,7 +34,7 @@ const Chatbot = () => {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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", 
+          "Authorization": "Bearer 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", 
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -86,11 +86,16 @@ const Chatbot = () => {
 
   return (
     <div className="chatbot-container">
+      
       <div className="chat-history-container">
         <ChatHistory messages={messages} onSelectMessage={setUserMessage} />
       </div>
 
       <div className="chat-box-container">
+      <div className="image-container" style={{marginLeft :'30%'}}>
+        <img src={img}/>
+        <h2 style={{marginLeft:'13%'}}>Trinetra AI</h2>
+      </div>
         <div className="chat-box">
           {messages.map((msg, index) => (
             <div key={index} className={`message ${msg.role}`}>
