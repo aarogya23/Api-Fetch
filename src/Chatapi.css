@@ -1,0 +1,126 @@
+/* Chatbot Container */
+.chatbot-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 80vh;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Left Sidebar - Chat History */
+  .chat-history-container {
+    width: 30%;
+    margin-right: 20px;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+    overflow-y: auto;
+  }
+  
+  .chat-history {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-history h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .history-item {
+    cursor: pointer;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-item:hover {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  /* Right Chat Box Container */
+  .chat-box-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Chat Box */
+  .chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chat Messages */
+  .message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    max-width: 80%;
+    box-sizing: border-box;
+  }
+  
+  .message.user {
+    background-color: #FF9800;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+    border-radius: 15px 15px 0 15px;
+  }
+  
+  .message.bot {
+    background-color: white;
+    color: black;
+    margin-right: auto;
+    text-align: left;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input and Send Button */
+  input[type='text'] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #e68900;
+  }
+  
+  

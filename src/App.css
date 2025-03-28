@@ -1,0 +1,63 @@
+/* ==========================
+   Container for the chat app
+   ========================== */
+   .chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* ==========================
+     Title styling
+     ========================== */
+  .chat-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* ==========================
+     Input field for user message
+     ========================== */
+  .chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* ==========================
+     Button styling
+     ========================== */
+  .chat-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Disabled state for the button */
+  .chat-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ==========================
+     Response container styling
+     ========================== */
+  .response-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  

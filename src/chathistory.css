@@ -1,0 +1,33 @@
+/* chathistory.css */
+
+.chat-history {
+    width: 30%;               /* Take up 30% of the screen width */
+    position: fixed;          /* Fix the position so it stays on the left side */
+    top: 0;                   /* Align to the top of the screen */
+    left: 0;                  /* Align to the left side of the screen */
+    height: 100vh;            /* Take up full height of the viewport */
+    background-color: #f9f9f9; /* Set a background color */
+    padding: 20px;            /* Add some padding for spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow to the side */
+    overflow-y: auto;         /* Enable scrolling if messages overflow */
+  }
+  
+  .chat-history h3 {
+    margin-top: 0;            /* Remove top margin for heading */
+    font-size: 1.5em;         /* Make the heading larger */
+  }
+  
+  .history-item {
+    padding: 10px;
+    cursor: pointer;         /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease;
+  }
+  
+  .history-item:hover {
+    background-color: #f1f1f1; /* Highlight item on hover */
+  }
+  
+  .history-item:active {
+    background-color: #e0e0e0; /* Give feedback when clicked */
+  }
+  
